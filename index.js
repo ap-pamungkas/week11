@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 app.use(bodyParser.json());
 app.use(morgan("tiny"));
-const PORT = process.env.APP_PORT || 8967;
+const PORT = process.env.APP_PORT || 3000;
 
 app.use("/test", (req, res) => {
   res.send("hello world");

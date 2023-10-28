@@ -10,6 +10,7 @@ const todoControllers = {
 
             })
         }catch(error){
+            console.log(error);
             res.status(500).json('get data movies fail')
 
         }
